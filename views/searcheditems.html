@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<title>Agricultural Supply Market</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/app.js"></link>
+<link rel="stylesheet" type="text/css" href="css/all.js"></link>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;   
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<!-- <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="/w3images/avatar_g2.jpg" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>Joshua Pregua</b></h4>
+
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Profile</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Settings</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>Logout</a>
+  </div>
+
+</nav> -->
+
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    
+ <!--    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span> -->
+    <div class="w3-container">
+    <div class="center">
+          <h1><b>Agricultural Supply Market</b></h1>
+    </div>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for items" title="Search an item">
+    <br><span>Kilometers:</span> <span id="f" style="font-weight:bold;color:red">0</span><br><br>
+    <div class="w3-container-middle">
+      <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      </div>
+    </div>
+    <br><br>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="img/item1.jpg" alt="msTandT" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>MS T&T Cleaner, 10 kg</b></p>
+        <p><br/>MS T&T Cleaner (Truck & Tractor) is a very powerful and safe cleaning agent for the cleaning of any means of transport (e.g. cars, trucks, trailers, tractors) and lacquered surfaces (e.g. agricultural implements and milking robots).<br/><br/>
+
+        Characteristics MS T&T Cleaner:<br/><br/>
+
+        Removes pollution perfectly even at low concentrations<br/>
+        Good stitch, so pollution and road dust will be removed after one treatment, if this .</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="img/item2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>MS DryCare, 25 kg</b></p>
+        <p>
+          <br/>MS DryCare is an instant drying powder for the rapid absorption of moisture, a clean living environment and pleasant scent.
+        <br/> MS DryCare may be used in organic production in accordance with Regulations (EC) No 834/2007 and (EC) No 889/2008.<br/><br/>
+
+              Highly absorbent (200%)<br/>
+              Pleasant scent<br/>
+              Clean living environment<br/>
+              Improved animal health.<br/><br/><p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="img/item3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Dunlop Purofort boot S5, green size 37</b></p>
+        <p>
+          <br/>Boots for all-round use in the agricultural sector. Specially for wet, dirty and slippery conditions.<br/>
+
+          Available in the sizes 37 to 48.<br/><br/>
+
+          Made of polyurethane<br/>
+          Full height boot<br/>
+          Profiled sole with good non-slip<br/>
+          Fitted with steel toe cap<br/>
+          Resistant to oil and grease<br/>
+          Resistant to alkali and acid<br/>
+          Outstanding wearing comfort<br/>
+          Isolating (up to -20°C)<br/>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="img/item4.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>MS Megades Novo, 20 kg</b></p>
+        <p>
+          MS Megades Novo is a universal disinfecting agent for use in animal housing and animal transport vehicles. MS Megades Novo was developed for use in pig, cattle and poultry farming.<br/><br/>
+
+          Available in different sizes.<br/><br/>
+
+          Powerful foaming disinfection agent<br/>
+          Equipment does not become discoloured<br/>
+          Broad range of applications: against bacteria, yeasts, and viruses<br/>
+          Non-corrosive<br/>
+          Superior dampening and in-depth penetration<br/>
+          Especially effective in the presence of organic material<br/>
+        </p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="img/item5.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Glue Fly Ribbon refill</b></p>
+        <p><br><br>
+          A spare roll for refilling the Glue Fly Ribbon adhesive tape set.<br><br>
+
+          100% non-toxic<br><br>
+
+
+          Easy to change the adhesive tape<br><br>
+
+          Length of the adhesive tape: 400 metres<br><br><br><br><br>
+
+</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="img/item6.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Liquid wasp bait, 1 L</b></p>
+        <p>This is a ready-to-use liquid wasp bait for use in every type of flytrap.<br><br><br><br>
+         Its unique composition makes it extremely effective. It also contains a substance that keeps bees away from the trap.<br><br>
+
+        Irresistible for wasps<br>
+        100% non-toxic<br>
+        Contents: 1 litre<br> <br><br></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+
+  
+
+  <!-- <div class="w3-black w3-center w3-padding-24">University of the Immaculate Conception</a></div> -->
+
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<script type="text/javascript">
+  var slider = document.getElementById("myRange");
+  var output = document.getElementById("kilometers");
+  output.innerHTML = slider.value; // Display the default slider value
+
+  // Update the current slider value (each time you drag the slider handle)
+  slider.oninput = function() {
+      output.innerHTML = this.value;
+}
+</script>
+
+</body>
+</html>
